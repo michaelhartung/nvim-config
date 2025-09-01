@@ -90,8 +90,8 @@ vim.api.nvim_create_autocmd('LspAttach', {
     if client:supports_method('text/Document/completion') then
       vim.lsp.completion.enable(true, client.id, ev.buf, { autotrigger = false })
       vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end)
-      vim.treesitter.start()
     end
+    pcall(vim.treesitter.start, ev.buf)
   end
 })
 
