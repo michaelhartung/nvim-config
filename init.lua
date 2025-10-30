@@ -39,6 +39,7 @@ vim.keymap.set("n", "gt",
 vim.keymap.set("n", "<leader>dn", function() vim.diagnostic.goto_next() end)
 vim.keymap.set("n", "<leader>dp", function() vim.diagnostic.goto_next() end)
 vim.keymap.set("n", "<leader>bp", function() vim.cmd("bp") end)
+vim.keymap.set("n", "<leader>bd", function() vim.cmd("bd") end)
 vim.keymap.set("n", "<leader>bn", function() vim.cmd("bn") end)
 vim.keymap.set("n", "<leader>ls", function() vim.cmd("ls") end)
 vim.keymap.set("n", "<leader>ff", function() vim.cmd("Explore") end)
